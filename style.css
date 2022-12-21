@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(40,40,40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+    font-family: sans-serif;
+}
+
+.start-button {
+    width: 300px;
+    height: 100px;
+    font-size: 45px;
+    display: block;
+}
+
+.page-title {
+    font-size: 60px;
+    color: aliceblue;
+}
+
+.gameboard {
+    width: 600px;
+    height: 600px;
+    display: none;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 200px);
+}
+
+.cell {
+    width: 200px;
+    height: 200px;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+}
+
+.seven, .eight, .nine {
+    border-bottom: 5px solid black;
+}
+
+.three, .six, .nine {
+    border-right: 5px solid black;
+}
+
+.reset {
+    height: 75px;
+    width: 150px;
+    font-size: 25px;
+    display: none;
+    position: relative;
+    top: 100px;
+    margin: auto;
+}
+
+.player-form {
+    background-color: darkgreen;
+    border: 1px solid black;
+    color: aliceblue;
+    border-radius: 10px;
+    width: 400px;
+    height: 650px;
+    padding: 15px;
+    position: absolute;
+    top: 150px;
+    left: 39vw;
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-fieldset {
+    height:200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.field-label {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+#player-one-name, #player-two-name {
+    height: 50px;
+    font-size: 25px;
+}
+
+select {
+    width: 60px;
+    height: 30px;   
+}
+
+#submit-button {
+    height: 70px;
+    font-size: 25px;
+}
+
+.board-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-one-display, .player-two-display {
+    width: 300px;
+    height: 200px;
+    color: aliceblue;
+    border: 3px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    align-items: center;
+}
+
+.player-one-display > h3, .player-two-display > h3 {
+    font-size: 70px;
+    margin: 0px;
+}
+
+.winner-message {
+    font-size: 60px;
+    width: 90vw;
+    height: 80px;
+    color: aliceblue;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}

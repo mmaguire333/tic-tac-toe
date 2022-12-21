@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="page-title">Tic Tac Toe</h1>
+    <button type="button" class="start-button">Start</button>
+    <div class="board-container">
+        <div class="gameboard">
+            <div class="cell one"></div>
+            <div class="cell two"></div>
+            <div class="cell three"></div>
+            <div class="cell four"></div>
+            <div class="cell five"></div>
+            <div class="cell six"></div>
+            <div class="cell seven"></div>
+            <div class="cell eight"></div>
+            <div class="cell nine"></div>
+        </div>
+    </div>
+    <form class="player-form">
+        <h2>Player Information</h2>
+        <fieldset class="form-fieldset">
+            <legend>Player One</legend>
+            <input type="text" name="player-one-name" id="player-one-name" placeholder="Player One Name" required>
+            <label for="player-one-marker" class="field-label">
+                Player One Marker:
+                <select name="player-one-marker" id="player-one-marker" required>
+                    <option value="X" selected>X</option>
+                    <option value="O">O</option>
+                </select>
+            </label>
+
+        </fieldset>
+        <fieldset class="form-fieldset">
+            <legend>Player Two</legend>
+            <input type="text" name="player-two-name" id="player-two-name" placeholder="Player Two Name" required>
+            <label for="player-two-marker" class="field-label">
+                Player Two Marker:
+                <select name="player-two-marker" id="player-two-marker" required>
+                    <option value="X">X</option>
+                    <option value="O" selected>O</option>
+                </select>
+            </label>
+            
+        </fieldset>
+        <button type="submit" id="submit-button">Submit</button>
+    </form>
+    <button type="button" class="reset">Restart</button>
+</body>
+</html>
