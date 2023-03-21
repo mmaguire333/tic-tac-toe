@@ -1,1 +1,3 @@
 # tic-tac-toe
+
+This is an implementation of the game Tic Tac Toe. The user has the option to play against another human, or to play against the computer with easy, medium, and hard difficulties. On easy difficulty the computer will play random moves. On medium difficulty it will attempt to block the user from winning if they are one move away from winning in a row or a column. On hard difficulty the computer will play the optimal move (found using a minimax algorithm) and the game will result in a draw if the user plays perfectly, otherwise the computer will win.
