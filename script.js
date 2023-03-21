@@ -47,6 +47,9 @@ const displayController = (function() {
 
     let body = document.querySelector("body");
 
+    let playerDisplayContainer = document.createElement('div');
+    playerDisplayContainer.classList.add("players-display-container");
+
     let playerOneDisplay = document.createElement("div");
     playerOneDisplay.classList.add("player-one-display");
     playerOneDisplay.style.display = "none"
@@ -65,8 +68,11 @@ const displayController = (function() {
     playerTwoDisplay.appendChild(playerTwoTitle);
     playerTwoDisplay.appendChild(playerTwoMark);
 
-    boardDisplay.insertAdjacentElement("beforebegin", playerOneDisplay);
-    boardDisplay.insertAdjacentElement("afterend", playerTwoDisplay);
+    playerDisplayContainer.appendChild(playerOneDisplay);
+    playerDisplayContainer.appendChild(playerTwoDisplay);
+    boardContainer.appendChild(playerDisplayContainer);
+    //boardDisplay.insertAdjacentElement("beforebegin", playerOneDisplay);
+    //boardDisplay.insertAdjacentElement("afterend", playerTwoDisplay);
 
     // PvP variables
     let playerOneName = "";
@@ -454,7 +460,9 @@ const displayController = (function() {
         startBtn.style.display = "block";
         computerBtn.style.display = "block";
         playerOneDisplay.style.display = "none";
+        playerOneDisplay.style.border = "3px solid darkred"
         playerTwoDisplay.style.display = "none";
+        playerTwoDisplay.style.border = "3px solid aliceblue";
         body.style.display = "flex";
     });
 
