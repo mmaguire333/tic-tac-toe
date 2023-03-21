@@ -10,7 +10,8 @@
 </head>
 <body>
     <h1 class="page-title">Tic Tac Toe</h1>
-    <button type="button" class="start-button">Start</button>
+    <button type="button" class="start-button">Play Against Person</button>
+    <button type="button" class="play-computer-button">Play Against Computer</button>
     <div class="board-container">
         <div class="gameboard">
             <div class="cell one"></div>
@@ -36,7 +37,6 @@
                     <option value="O">O</option>
                 </select>
             </label>
-
         </fieldset>
         <fieldset class="form-fieldset">
             <legend>Player Two</legend>
@@ -48,9 +48,41 @@
                     <option value="O" selected>O</option>
                 </select>
             </label>
-            
         </fieldset>
         <button type="submit" id="submit-button">Submit</button>
+    </form>
+    <form class="computer-form">
+        <h2>Player Information</h2>
+        <fieldset class="form-fieldset">
+            <legend>Player</legend>
+            <input type="text" name="player-name" id="player-name" placeholder="Player Name" required>
+            <label for="player-marker" class="field-label">
+                Player One Marker:
+                <select name="player-marker" id="player-marker" required>
+                    <option value="X" selected>X</option>
+                    <option value="O">O</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="form-fieldset">
+            <legend>Computer</legend>
+            <label for="player-two-marker" class="field-label">
+                Computer Marker:
+                <select name="computer-marker" id="computer-marker" required>
+                    <option value="X">X</option>
+                    <option value="O" selected>O</option>
+                </select>
+            </label>
+            <label for="computer-difficulty" class="field-label">
+                Computer Difficulty:
+                <select name="computer-difficulty" id="computer-difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </label>
+        </fieldset>
+        <button type="submit" id="computer-form-submit">Submit</button>
     </form>
     <button type="button" class="reset">Restart</button>
 </body>

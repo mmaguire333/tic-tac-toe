@@ -7,10 +7,10 @@ body {
     font-family: sans-serif;
 }
 
-.start-button {
+.start-button, .play-computer-button {
     width: 300px;
     height: 100px;
-    font-size: 45px;
+    font-size: 40px;
     display: block;
 }
 
@@ -57,7 +57,7 @@ body {
     margin: auto;
 }
 
-.player-form {
+.player-form, .computer-form {
     background-color: darkgreen;
     border: 1px solid black;
     color: aliceblue;
@@ -88,7 +88,7 @@ body {
     font-size: 25px;
 }
 
-#player-one-name, #player-two-name {
+#player-one-name, #player-two-name, #player-name {
     height: 50px;
     font-size: 25px;
 }
@@ -98,7 +98,7 @@ select {
     height: 30px;   
 }
 
-#submit-button {
+#submit-button, #computer-form-submit {
     height: 70px;
     font-size: 25px;
 }
